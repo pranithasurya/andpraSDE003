@@ -6,7 +6,7 @@ This project is to provide UI for users to do following:
 - login tab in navbar to authenticate a user to http://www.goodreads.com website
 
 
-## Prereeuisites
+## Prerequisites
 
 - node 8.12.0
 - npm 5.0.2
