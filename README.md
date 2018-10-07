@@ -33,4 +33,4 @@ From the current directory, run the following commands  to start the server on h
 
 
 ## Note
-The login tab authenticates the user to http://www.goodreads.com but doesn't redirect the user back to the client application i.e., http://localhost:4200 . For more details on this, please take a look at my other repository http://github.com/
+The login tab authenticates the user to http://www.goodreads.com but doesn't redirect the user back to the client application i.e., http://localhost:4200 . For more details on this, please take a look at my other repository https://github.com/pranithasurya/andpraSDE002
