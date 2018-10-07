@@ -1,0 +1,15 @@
+<div *ngIf="quotes|async;else loading">
+	<div class="row gifbackground">
+		<div class="col-lg-4 col-centered">
+			<span *ngFor="let quote of quotes|async">
+			<div class="list-group">
+			  <a  class="list-group-item list-group-item-action flex-column align-items-start ">
+			    <p class="mb-1">{{quote.quote}}</p>
+			    <small>{{quote.likes}}</small>
+			  </a>
+			</div>
+			</span>
+		</div>
+	</div>
+</div>
+<ng-template #loading><img src="../assets/loadinganimation2.gif"></ng-template>
