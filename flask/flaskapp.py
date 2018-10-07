@@ -36,6 +36,11 @@ def get():
 def get():
 	return getdata('python marktwain_quote_parser.py', 'quotes.json')
 
+@app.route('/',endpoint='hello', methods=['GET','POST', 'OPTIONS'])
+def get():
+	return "Hello Expedia!!! Use http://localhost:4300/posts or http://localhost:4300/quotes to see data "
+
+
 
 if __name__ == '__main__':
 	app.run(port='4300')

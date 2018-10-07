@@ -1,27 +1,36 @@
-# AndpraSDE00N
+# andpraSDE003
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+This project is to provide UI for users to do following:
+- posts tab in navbar to view top 8 Expedia's fb posts
+- quotes tab in navbar to view top 10 Mark Twain quotes from http://www.goodreads.com website
+- login tab in navbar to authenticate a user to http://www.goodreads.com website
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Prereeuisites
 
-## Code scaffolding
+- node 8.12.0
+- npm 5.0.2
+- python 3.5.0
+- Make sure the following modules are available - flask, os, bs4, urllib.request, json. These modules can either be installed using pip (linux/windows) and easyinstall (windows)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## How to run
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone the code into local and go to the current directory
 
-## Running unit tests
+Steps to start web server:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Go to ./flask folder in the project and run the command "python flaskapp.py". This starts the server on http://localhost:4300 . You can use the following endpoints to get raw json:
+- http://localhost:4300/posts to get top 8 Expedia's Facebook posts
+- http://localhost:4300/quotes to get top 10 Mark Twain quotes
+	
 
-## Running end-to-end tests
+Steps to start client:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+From the current directory, run the following commands  to start the server on http://localhost:4200 :
+- npm install
+- ng serve
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Note
+The login tab authenticates the user to http://www.goodreads.com but doesn't redirect the user back to the client application i.e., http://localhost:4200 . For more details on this, please take a look at my other repository http://github.com/
